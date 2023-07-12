@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string name="str_confirm_password">Confirm password</string>
+    <string name="str_change_password">Change password</string>
+    <string name="str_email">email</string>
+    <string name="str_email_or_phone">email/phone</string>
+    <string name="str_enter_otp">OTP code</string>
+    <string name="str_enter_phone_number">Phone number</string>
+    <string name="str_forget_pass">Forget password</string>
+    <string name="str_get_otp_again">Send again OTP code</string>
+    <string name="str_login">Login</string>
+    <string name="str_login_fail">Wrong username or password</string>
+    <string name="str_no_account">No account?</string>
+    <string name="str_password">Password</string>
+    <string name="str_password_old">Old password</string>
+    <string name="str_password_new">New password</string>
+    <string name="str_permission_check">Permission\n\n please accept app permission [Setting] > [Permission]</string>
+    <string name="str_register_now">Register</string>
+    <string name="str_send_otp">Confirm OTP code</string>
+    <string name="str_submit">Confirm</string>
+    <string name="str_username">Username</string>
+    <string name="str_verify_phone_number">Confirm phone number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    strange activity-->
+    <string name="str_add_friend">Add friend</string>
+</resources>

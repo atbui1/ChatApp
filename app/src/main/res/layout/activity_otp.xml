@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OtpActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:text="@string/str_enter_otp"
+        android:gravity="center"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+    <EditText
+        android:id="@+id/edt_otp"
+        android:hint="@string/str_enter_phone_number"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:background="@drawable/bg_border_radius"
+        android:layout_marginHorizontal="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="@dimen/dp50"/>
+    <Button
+        android:id="@+id/btn_send_otp"
+        android:text="@string/str_submit"
+        android:background="@drawable/bg_color_app"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+    <TextView
+        android:id="@+id/txt_get_otp_again"
+        android:text="@string/str_get_otp_again"
+        android:gravity="center"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"/>
+
+</LinearLayout>

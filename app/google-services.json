@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "569264879183",
+    "project_id": "chatapp-aadeb",
+    "storage_bucket": "chatapp-aadeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569264879183:android:71faf03de3812b8ee41c3a",
+        "android_client_info": {
+          "package_name": "com.edu.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569264879183-5pv0unl00j72b9f0hh5vbujmmkhr7t3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edu.chatapp",
+            "certificate_hash": "201c151c4da559036abab99d296a9f8142789fbb"
+          }
+        },
+        {
+          "client_id": "569264879183-v0nlcvfc7s99t97j6sj9mmffkujkr676.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnGOxmjYuqqhX0D5resl8yOatru5_HQnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569264879183-v0nlcvfc7s99t97j6sj9mmffkujkr676.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="end"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        text seen-->
+        <TextView
+            android:id="@+id/txt_message"
+            android:textSize="@dimen/sp17"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/bg_border_radius"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp100"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+<!--        avatar receive-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar_receive"
+            android:src="@mipmap/img_logo_shop"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp15"
+            android:visibility="gone"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"/>
+<!--        check seen status-->
+        <TextView
+            android:id="@+id/txt_seen_status"
+            android:textSize="@dimen/sp13"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

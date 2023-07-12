@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_margin="@dimen/dp15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            img avatar-->
+            <LinearLayout
+                android:layout_marginVertical="@dimen/dp50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_logo"
+                    android:src="@mipmap/img_logo_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+<!--        filed input-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<!--                username-->
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_username"
+                        android:text="user"
+                        android:hint="@string/str_username"
+                        android:textSize="@dimen/sp15"
+                        android:background="@drawable/bg_border_radius"
+                        android:paddingLeft="@dimen/dp8"
+                        android:paddingVertical="@dimen/dp15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+<!--                email-->
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_email"
+                        android:text="user@gmail.com"
+                        android:hint="@string/str_email"
+                        android:textSize="@dimen/sp15"
+                        android:background="@drawable/bg_border_radius"
+                        android:paddingLeft="@dimen/dp8"
+                        android:paddingVertical="@dimen/dp15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+<!--                password-->
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:text="12345"
+                        android:hint="@string/str_password"
+                        android:textSize="@dimen/sp15"
+                        android:background="@drawable/bg_border_radius"
+                        android:paddingLeft="@dimen/dp8"
+                        android:paddingVertical="@dimen/dp15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+<!--                confirm password-->
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_confirm_password"
+                        android:text="12345"
+                        android:hint="@string/str_confirm_password"
+                        android:textSize="@dimen/sp15"
+                        android:background="@drawable/bg_border_radius"
+                        android:paddingLeft="@dimen/dp8"
+                        android:paddingVertical="@dimen/dp15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+<!--                btn event-->
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/dp50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:text="@string/str_register_now"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_color_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

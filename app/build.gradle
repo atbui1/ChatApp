@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.edu.chatapp'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.edu.chatapp"
+        minSdk 23
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+//    card-view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+//    viewpager2
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+//    recycle view
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+//    picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+//firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+//    service of firebase -- push notification
+    implementation 'com.google.firebase:firebase-messaging'
+//    service of firebase -- Authenticate
+    implementation 'com.google.firebase:firebase-auth'
+//  service of firebase -- realtime database
+    implementation 'com.google.firebase:firebase-database'
+//    https://github.com/ParkSangGwon/TedPermission
+    implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
+//Ted bottom picker
+    implementation 'io.github.ParkSangGwon:tedbottompicker:2.0.1'
+    //    retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'  //2.5.0
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'    //2.4.0
+}

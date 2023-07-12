@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp10"
+    android:layout_marginTop="@dimen/dp8"
+    android:background="@drawable/bg_post_radius"
+    android:orientation="vertical">
+
+    <!--        container-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--            img avatar-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:padding="@dimen/dp5"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp8"
+                android:src="@mipmap/img_logo_shop" />
+            <!--            img status-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_status"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignBottom="@+id/img_avatar"
+                android:layout_toLeftOf="@id/lnl_title"
+                android:visibility="gone" />
+
+            <!--                content message-->
+            <LinearLayout
+                android:id="@+id/lnl_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/lnl_post_option"
+                android:layout_toEndOf="@id/img_avatar"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/txt_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="ten user poster"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/txt_post_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp10"
+                        android:singleLine="true"
+                        android:text="late message sds"
+                        android:textSize="@dimen/sp13" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/txt_post_time"
+                        android:paddingLeft="@dimen/dp5"
+                        android:src="@drawable/icon_world" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnl_post_option"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp15"
+                    android:src="@drawable/icon_more" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:text="ihjiaosd juasiodjaiosd joiajsd aoijd
+adskjdioas
+iujadoiasi9 asduoiasjd
+dasdasdasdas" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_post_picture"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_logo_shop" />
+
+    <!-- quantity likes and comments -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40">
+
+        <LinearLayout
+            android:id="@+id/rll_container_emoji"
+            android:paddingLeft="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_like" />
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_wow" />
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_love" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_post_like_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/rll_container_emoji"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp10"
+            android:text="147" />
+
+        <TextView
+            android:id="@+id/txt_post_comment_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp10"
+            android:text="123 comments" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:orientation="horizontal"
+        android:weightSum="3">
+<!--option like-->
+        <LinearLayout
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_like_default"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_likes" />
+
+            <ImageView
+                android:id="@+id/img_like_active"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_like_active"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp10"
+                android:text="Like" />
+        </LinearLayout>
+<!--option comment-->
+        <LinearLayout
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_comment"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_comment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp10"
+                android:text="Comment" />
+        </LinearLayout>
+<!--option share-->
+        <LinearLayout
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp10"
+                android:text="Share" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string name="str_confirm_password">Xác Nhận Mật khẩu</string>
+    <string name="str_change_password">Thay đổi mật kh</string>
+    <string name="str_email">email</string>ẩu
+    <string name="str_email_or_phone">Nhập email/phone</string>
+    <string name="str_enter_otp">Nhập mã OTP</string>
+    <string name="str_enter_phone_number">Nhập số điện thoại</string>
+    <string name="str_forget_pass">Quên mật khẩu</string>
+    <string name="str_get_otp_again">Gửi lại mã OTP</string>
+    <string name="str_login">Đăng Nhập</string>
+    <string name="str_login_fail">Sai tên đăng nhập hoặc mật khẩu</string>
+    <string name="str_no_account">Chưa có tài khoản?</string>
+    <string name="str_password">Mật khẩu</string>
+    <string name="str_password_old">Mật khẩu cũ</string>
+    <string name="str_password_new">Maatj khẩu mới</string>
+    <string name="str_permission_check">Vui lòng cấp quyền để sử dụng chức năng này\n\n vui lòng cấp phép quyền ứng dụng [Cài đặt] > [Quyền truy cập]</string>
+    <string name="str_register_now">Đăng ký</string>
+    <string name="str_send_otp">Xác nhận mã OTP</string>
+    <string name="str_submit">Xác nhận</string>
+    <string name="str_username">Tên đăng nhập</string>
+    <string name="str_verify_phone_number">Xác nhân số điện thoại</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">TRANG TRỐNG</string>
+
+    <!--    strange activity-->
+    <string name="str_add_friend">Thêm bạn</string>
+</resources>

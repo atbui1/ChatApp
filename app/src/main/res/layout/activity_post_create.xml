@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_10"
+    tools:context=".activity.PostCreateActivity">
+
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+
+        <ImageView
+            android:id="@+id/img_back_stack"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/icon_arrow_left" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_post_title"
+                    android:hint="ban cam thay the nao"
+                    android:padding="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:background="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_picture"
+                android:src="@mipmap/img_logo_shop"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <LinearLayout
+                android:id="@+id/lnl_post_create"
+                android:background="@drawable/bg_color_app"
+                android:layout_marginTop="@dimen/dp50"
+                android:layout_marginHorizontal="@dimen/dp50"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50">
+                <TextView
+                    android:text="add post"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
